@@ -23,6 +23,8 @@ const fareDoubler = createFareMultiplier(2);
 
 const fareTripler = createFareMultiplier(3);
 
+//pass function in WITHOUT parens because PARENS cause js to invoke the function
+//Also it's saved to a variable above (maybe?)
 const selectDifferentDrivers = function ( driversArray, specifiedDriverFunction ) {
     return specifiedDriverFunction(driversArray);
     //return something
